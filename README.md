@@ -13,7 +13,7 @@ School LMS is a comprehensive web application designed for educational instituti
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.12+
 - PostgreSQL 13+ (recommended) or SQLite3
 - pip (Python package manager)
 - Git
@@ -23,7 +23,7 @@ School LMS is a comprehensive web application designed for educational instituti
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/schoollms.git
+git clone https://github.com/Saman-naruee/schoollms.git
 cd schoollms
 ```
 
@@ -31,12 +31,12 @@ cd schoollms
 
 ```bash
 # Windows
-python -m venv venv
-.\venv\Scripts\activate
+python -m venv env
+.\env\Scripts\activate
 
 # Linux/MacOS
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv env
+source env/bin/activate
 ```
 
 ### 3. Install Dependencies
@@ -133,4 +133,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-For support, email support@example.com or open an issue in the repository.
+For support, email samannaruee@gmail.com or open an issue in the repository.
