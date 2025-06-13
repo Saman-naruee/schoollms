@@ -11,6 +11,21 @@ School LMS is a comprehensive web application designed for educational instituti
 - Admin dashboard
 - Responsive design
 
+## Technologies Used
+
+*   **Backend**: Python, Django, Django REST Framework
+*   **Database**: PostgreSQL (recommended), SQLite3
+*   **Other**: pip, Git
+
+## Security Considerations
+
+It is crucial to follow security best practices during development and deployment:
+*   Always keep your `SECRET_KEY` confidential and use environment variables for sensitive data.
+*   Ensure `DEBUG` is set to `False` in production.
+*   Regularly update dependencies to patch known vulnerabilities.
+*   Implement proper input validation and sanitization to prevent common web vulnerabilities (e.g., SQL injection, XSS).
+*   Use HTTPS in production to encrypt communication.
+
 ## Prerequisites
 
 - Python 3.12+
@@ -88,7 +103,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Visit `http://127.0.0.1:8000/` in your browser to access the application.
+Visit `http://127.0.0.1:8000/` in your browser to access the application. The Django Admin panel will be available at `http://127.0.0.1:8000/admin/` after creating a superuser.
 
 ## Environment Variables
 
@@ -112,7 +127,7 @@ schoollms/
 ├── requirements.txt    # Project dependencies
 ├── .env               # Environment variables
 ├── .gitignore
-└── schoollms/         # Project configuration
+└── schoollms/         # Main project configuration
     ├── __init__.py
     ├── settings.py     # Django settings
     ├── urls.py        # Main URL configuration
